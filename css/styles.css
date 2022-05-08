@@ -834,12 +834,12 @@ ul {
 .modal-icon {
     position: relative;
     margin-top: 4px;
-    margin-bottom: 28px;
+    margin-bottom: 10px;
+    
 }
 
 
 .modal-input {
-    position: absolute;
     padding-left: 42px;
     display: flex;
     width: 100%;
@@ -849,27 +849,38 @@ ul {
     box-sizing: border-box;
     border-radius: 4px;
     margin-bottom: 10px;
-    
-
+    cursor: pointer;
 }
+.modal-input:hover .modal-svg,
+.modal-input:focus .modal-svg {
+    color: var(--accent-color);
+}
+
 .modal-input::placeholder {
     color: rgba(117, 117, 117, 0.5);
 }
 .modal-svg {
     position: absolute;
-    top: 50%;
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    bottom: 11px;
     left: 15px;
-    margin-top: 11px;
-    margin-bottom: 11px;
-          
+         
 }
+
 .modal-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17px;
+    letter-spacing: 0.01em;    
+    color: #757575;
    
 }
 .modal-textarea {
     width: 100%;
     height: 120px;
-
+    font-weight: 400;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
@@ -878,9 +889,10 @@ ul {
     font-style: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: color: rgba(117, 117, 117, 0.5);
+    color: rgba(117, 117, 117, 0.5);
     resize: none;
 }
+
 .modal-policy {
     font-size: 14px;
     line-height: 1.71;
@@ -907,7 +919,7 @@ ul {
     border: 2px solid var(--accent-color);
 }
 .modal-policy:focus .checkbox {
-    border: 2px solid var(--accent-color);
+    border: 2px solid tomato;
 }
 .checkbox {
     border: 2px solid ;
@@ -917,4 +929,26 @@ ul {
     align-items: center;
     justify-content: center;
     transition: background-color ;
+}
+.box {
+    width: 400.62px;
+    height: 24px;
+    margin-bottom: 30px;
+}
+.button-prim-mode {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
