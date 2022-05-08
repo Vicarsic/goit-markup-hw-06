@@ -505,19 +505,87 @@
           </svg>
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-        <form>
-          <label class="name">
-            Имя
-            <input type="text" class="modal-input" />
+        <form class="modal-form">
+          <label class="modal-label" for="name">Имя</label>
+          <div class="modal-icon">
+            <input
+              type="name"
+              name="name"
+              id="name"
+              autofocus
+              required
+              class="modal-input"
+            />
+            <svg class="modal-svg">
+              <use
+                href="./images/icons.svg#icon-person-black"
+                width="18"
+                height="18"
+              ></use>
+            </svg>
+          </div>
+          <label class="modal-label" for="phone">Телефон</label>
+          <div class="modal-icon">
+            <input
+              type="phone"
+              name="phone"
+              id="phone"
+              required
+              class="modal-input"
+            />
+            <svg class="modal-svg">
+              <use
+                href="./images/icons.svg#icon-phone-black"
+                width="18"
+                height="18"
+              ></use>
+            </svg>
+          </div>
+          <label class="modal-label" for="email">Почта</label>
+          <div class="modal-icon">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              class="modal-input"
+            />
+            <svg class="modal-svg">
+              <use
+                href="./images/icons.svg#icon-email-black"
+                width="18"
+                height="18"
+              ></use>
+            </svg>
+          </div>
+          <label class="modal-label" for="comment">Комментарий</label>
+          <textarea
+            name="comment"
+            cols="30"
+            rows="10"
+            placeholder="Введите текст"
+            id="comment"
+            class="modal-textarea"
+          ></textarea>
+          <label class="modal-policy" for="checkbox"
+            >Соглашаюсь с рассылкой и принимаю<a href="" class="checkbox-policy"
+              >Условия договора</a
+            >
+            <input
+              type="checkbox"
+              name="policy"
+              id="checkbox"
+              class="checkbox"
+            />
+            <svg class="checkbox-svg">
+              <use
+                href="./images/icons.svg#icon-square"
+                width="16"
+                height="15"
+              ></use>
+            </svg>
           </label>
-          <label class="tel">
-            Телефон
-            <input type="text" class="modal-input" />
-          </label>
-          <label class="email">
-            Почта
-            <input type="text" class="modal-input" />
-          </label>
+          <button type="submit" class="button-prim-mode">Отправить</button>
         </form>
       </div>
     </div>
