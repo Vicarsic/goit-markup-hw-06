@@ -497,6 +497,7 @@
         </div>
       </div>
     </footer>
+    <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -560,20 +561,20 @@
           </div>
           <label class="modal-label" for="comment">Комментарий</label>
           <textarea
+            class="modal-textarea" 
             name="comment"
             cols="30"
             rows="10"
             placeholder="Введите текст"
             id="comment"
-            class="modal-textarea"
           ></textarea>
           <div class="box">
             <label class="modal-policy" for="checkbox"
-              >Соглашаюсь с рассылкой и принимаю<span></span><a href="" class="checkbox-policy"
+              ><span>Соглашаюсь с рассылкой и принимаю</span><a href="" class="checkbox-policy"
                 >Условия договора</a
               ></span>
-                <input
-                type="checkbox"
+              <input
+              type="checkbox"
               name="policy"
               id="checkbox"
               class="checkbox"
@@ -587,7 +588,7 @@
               </svg>
             </label>
           </div>
-          <button type="submit" class="button-prim-mode">Отправить</button>
+          <button type="submit" class="form-button">Отправить</button>
         </form>
       </div>
     </div>
