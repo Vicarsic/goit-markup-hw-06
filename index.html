@@ -585,17 +585,20 @@
               id="comment"
             ></textarea>
           </label>
-          <label class="checkbox-label">
+          <div class="modal-field">
             <input
-              class="checkbox-input"
               type="checkbox"
-              name="agreement"
-              checked
+              class="input-check visually-hidden"
+              id="input-check"
+              name="policy"
+              value="policy"
             />
-            <span class="checkbox-agreement"></span>
-            Соглашаюсь с рассылкой и принимаю
-            <a class="checkbox-condition" href="">Условия договора</a>
-          </label>
+            <label for="input-check" class="check-text"
+              ><span>Соглашаюсь с рассылкой и принимаю&nbsp;</span
+              ><a class="checkbox-condition" href="">Условия договора</a>
+            </label>
+          </div>
+
           <button type="submit" class="form-button">Отправить</button>
         </form>
       </div>
