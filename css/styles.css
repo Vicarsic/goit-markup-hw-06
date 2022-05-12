@@ -811,14 +811,15 @@ ul {
     background-color: transparent;
     cursor: pointer;
     border-radius: 4px;
+    color: 250ms var(--timing-function);;
     transition: border 250ms var(--timing-function),
-    color 250ms var(--timing-function);
 }
 
 .subscribe-email:focus {
     outline: none;
     color: var(--primary-white-color);
     border: 1px solid var(--accent-color);
+    transition: border 250ms var(--timing-function);
 }
 
 .subscribe-email:-webkit-autofill {
@@ -841,6 +842,7 @@ ul {
 
 .subscribe-email:focus::placeholder {
     color: var(--accent-color);
+    transition: color 250ms var(--timing-function);
 }
 
 .send {
@@ -858,6 +860,7 @@ ul {
 .send:focus {
     outline: none;
     border: 2px solid var(--color-email-footer);
+    transition: border 250ms var(--timing-function);
 }
 
 .send-text {
