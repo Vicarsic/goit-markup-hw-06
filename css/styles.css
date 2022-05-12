@@ -73,7 +73,7 @@ ul {
 .link-two,
 .link-down {
     text-decoration: none;
-    transition: color 250ms var(--timing-function), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
 .site-nav.list {
@@ -101,7 +101,7 @@ ul {
 .site-nav {
     display: flex;
     align-items: center;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms var(--timing-function);
 }
 .header-link {
     position: relative;
@@ -109,7 +109,7 @@ ul {
     color: var(--title-text-color);
     padding-top: 32px;
     padding-bottom: 32px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms var(--timing-function);
 
 }
 
@@ -163,13 +163,15 @@ ul {
 .link:hover,
 .link:focus {
     color: var(--accent-color); 
+    transition: color 250ms var(--timing-function);
 }
 .site-nav.list .list-current {
-    color: var(--accent-color)
+    color: var(--accent-color);
 }
 
 .site-nav .link .list-current {
     color: var(--accent-color);
+    
 }
 .list-current::after {
     content: "";
@@ -192,13 +194,15 @@ ul {
     display: flex;
     align-items: center;
     color: var(--primary-text-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms var(--timing-function), fill 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
 }
 .contact-link .icon-contact:hover,
 .contact-link .icon-contact:focus {
     color: var(--primary-text-color); 
     fill: var(--accent-color);
+    transition: color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
 }
 .icon-contact::before {
     display: flex;
@@ -228,9 +232,9 @@ ul {
 }
 .pic {
     width: 370px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
 }
  
 .pic:hover .top-text,
@@ -240,10 +244,10 @@ ul {
 
 .card {
     display: block;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms var(--timing-function),
+    border 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
 }
 .card:hover,
 .card:focus { 
@@ -253,6 +257,9 @@ ul {
     box-shadow: 0px 1px 1px var(--boxshadow-three),
     0px 4px 4px var(--boxshadow-four),
     1px 4px 6px var(--boxshadow-five);
+    transition: border 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
 }
 .top-wrap {
     position: relative;
@@ -269,7 +276,7 @@ ul {
     color: var(--primary-white-color);
     height: 100%;
     transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
     overflow: auto;
 }
 
@@ -343,14 +350,16 @@ ul {
     font-family: inherit;
     border-radius: 4px;
     background-color: var(--team-bgd-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
 }
 .filter .buttons-all:hover,
 .filter .buttons-all:focus {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
+    transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
 }
 
 .filter .buttons:hover,
@@ -364,6 +373,11 @@ ul {
     0px 1px 2px var(--boxshadow-two),
     0px 2px 2px var(--boxshadow-three);
     border-radius: 4px;
+    transition: color 250ms var(--timing-function),
+    border-radius 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
+    
 }   
 .button {
     font-family: 'Roboto';
@@ -380,10 +394,10 @@ ul {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     letter-spacing: 0.06em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms var(--timing-function),
+    border-radius 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
 }
 .hero .button {
     display: inline-block;
@@ -393,15 +407,14 @@ ul {
 .button:hover,
 .button:focus {
     background-color: var(--accent-color);
+    transition: background-color 250ms var(--timing-function);
 }
 .but {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms var(--timing-function),
+    border-radius 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
 }
-
-
 
 /* Преимущества */
 
@@ -603,19 +616,20 @@ ul {
     background-color: var(--backgrcolor);
     border-radius: 50%;
     fill: var(--primary-white-color);
-    transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-radius 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
     
 }
 .masters-soc-icon {
     fill: var(--icon-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms var(--timing-function);
 }
 
 .masters-soc-link:hover,
 .masters-soc-link:focus {
     fill: var(--primary-white-color);
     background-color: var(--accent-color);
+    transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
     
 }
 .masters-soc-link:hover .masters-soc-icon {
@@ -664,32 +678,34 @@ ul {
     width: 100%;
     box-sizing: border-box;
     background-color: transparent;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 .client-icon {
     width: 170px;
     height: 92px;
     border: 1px solid var(--icon-color);
     border-radius: 4px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
 }
 
 .svg {
     fill: var(--icon-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms var(--timing-function);
 }
 .client-link:hover,
 .client-link:focus {
     border-color: var(--accent-color);
     fill: var(--accent-color);
+    transition: border-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 .client-link:hover .svg,
 .client-link:focus .svg {
     fill: var(--accent-color);
     border-color: var(--accent-color);
+    transition: border-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 .client-icon + .client-icon {
     margin-left: 30px;   
@@ -700,6 +716,7 @@ ul {
 .client-icon:hover,
 .client-icon:focus {
     border-color: var(--accent-color);
+    transition: border-color 250ms var(--timing-function);
 }
 
 /* Футер */
@@ -734,14 +751,14 @@ ul {
 .city {
     margin-top: 20px;
     margin-bottom: 9px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
 }
 .contact-item {
     font-size: 14px;
     line-height: 1.71;
     color: var(--contact-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: color 250ms var(--timing-function);
        
 }
 .contact-item:not(:last-child) {
@@ -757,6 +774,7 @@ ul {
 .city:hover,
 .city:focus {
     color: var(--accent-color);
+    transition: color 250ms var(--timing-function);
 }
 .logo-down {
     display: inline-block;
@@ -811,8 +829,8 @@ ul {
     background-color: transparent;
     cursor: pointer;
     border-radius: 4px;
-    color: 250ms var(--timing-function);;
-    transition: border 250ms var(--timing-function),
+    color: 250ms var(--timing-function);
+    transition: border 250ms var(--timing-function);
 }
 
 .subscribe-email:focus {
@@ -833,6 +851,7 @@ ul {
     border: 1px solid var(--accent-color);
     -webkit-text-fill-color: var(--primary-white-color);
     caret-color: var(--primary-white-color);
+    transition: border 250ms var(--timing-function);
 }
 
 .subscribe-email::placeholder {
@@ -890,7 +909,7 @@ ul {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity 250ms var(--timing-function), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
 .backdrop.is-hidden .modal {
     transform: scale(0.5) rotate(-270deg);
@@ -909,7 +928,7 @@ ul {
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms var(--timing-function), background-color 250ms var(--timing-function), border-radius 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
     
 }
 .modal-close-btn {
@@ -926,10 +945,11 @@ ul {
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
     box-sizing: border-box;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 .modal-close-btn:hover {
     fill: var(--accent-color)
+    
 }
 .icon-close {
     position: absolute;
@@ -942,15 +962,12 @@ ul {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-
 }
 .modal-icon {
     position: relative;
     margin-top: 4px;
     margin-bottom: 10px;
-    
 }
-
 .modal-input {
     padding-left: 42px;
     display: flex;
@@ -968,9 +985,11 @@ ul {
  
 .modal-input:focus {
     border-color: var(--accent-color);
+    transition: border-color 250ms var(--timing-function);
 }
 .modal-input:focus + .modal-svg {
     fill: var(--accent-color);
+    transition: fill 250ms var(--timing-function);
 }
 .modal-input::placeholder {
     color: rgba(117, 117, 117, 0.5);
@@ -983,7 +1002,6 @@ ul {
     bottom: 11px;
     left: 15px;
     transition: fill 250ms;
-         
 }
 .modal-label {
     font-weight: 400;
@@ -1086,7 +1104,10 @@ ul {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: box-shadow 250ms var(--timing-function);
+    transition: box-shadow 250ms var(--timing-function), 
+    transition: color 250ms var(--timing-function),
+    border-radius 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
 }
 .form-button:focus {
     outline: none;
