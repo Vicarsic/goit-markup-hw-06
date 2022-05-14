@@ -1010,7 +1010,7 @@ ul {
     letter-spacing: 0.01em;    
     color: #757575;
 }
-.modal-label:last-child {
+.modal-label.comment {
     margin-bottom: 20px;
 }
 .modal-textarea {
